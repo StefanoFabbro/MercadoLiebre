@@ -1,0 +1,318 @@
+/************* GENERAL *************/
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 12px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/************* HEADER *************/
+
+header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.cabecera {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto;
+}
+
+.logo {
+    width: 50%;
+}
+
+.buscar {
+    width: 50%;
+}
+
+.lupa {
+    background-color: white;
+    border-radius: 4px;
+    border: solid thin;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header ul {
+    list-style: none;
+}
+
+.main-navbar {
+    display: none;
+    margin: 0;
+    padding: 0;   
+}
+
+
+.header-cuotas {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px; 
+}
+
+.banner {
+    max-width: 100%;
+}
+
+.burger-menu i{
+    padding: 15px;
+    margin: 20px 10px; 
+    color: white;
+    background-color: #1259c3;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.burger-menu {
+    text-align: center;
+}
+/************* MAIN *************/
+
+    /***** MAIN HOME *****/
+main {
+    background-color: #ebebeb;
+    background-size: 90%;
+    margin: 15px;
+}
+
+main ul {
+    list-style: none;
+    text-align: left;
+    color: #666;
+}
+
+main img {
+    padding: 10px;
+}   
+
+#price {
+    font-size: 18px;
+    padding: 5px;
+    align-self: center;
+    max-width: 30%;
+}
+
+#discount {
+    font-size: 16px;
+    color: #39b54a;
+    padding: 5px;
+    max-width: 70%;
+}
+
+#description {
+    font-size: 16px;
+    padding: 5px;
+    color: #666;
+    display: none;
+}
+
+.producto {
+    margin-top: 10px;
+        box-sizing: border-box;
+}
+
+.product {
+    width: 100%;
+    padding: 0px;
+    max-height: 100%;
+}
+
+
+.individual-product {
+    width: 100%;
+    border-top: solid 1px #ebebeb;
+    background-color: white;
+    padding: 0px;
+}
+
+.precio-descuento {
+    display: flex;
+    align-items: center;
+
+} 
+
+.icons-cart {
+    display: block;
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 55px;
+    position: relative;
+    left: 80%;
+    top: -15px;
+}
+
+    /***** MAIN LOGIN Y REGISTER *****/
+.formulario label {
+    display: block;
+
+}
+
+main form input {
+    box-sizing: border-box;
+    margin: 5px;
+    padding: auto;
+    width: 50%;
+}
+
+.boton-formulario {
+    background-color: #1259c3;
+    border: none;
+    font-size: 15px;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+
+
+
+/************* FOOTER *************/
+
+.text-footer {
+    text-align: center;
+    line-height: 14px;
+    padding: 2px;
+}
+
+.alineacion-footer {
+    margin: 20px 0px;
+}
+
+footer i {
+    padding: 2em;
+    margin: 8px;
+}
+
+/************* MEDIA QUERY *************/
+
+@media (min-width: 481px) {
+    .logo {
+        width: 30%;
+    }
+    .buscar {
+        width: 30%;
+    }
+    .header-cuotas {
+        width: 30%;
+    }
+    .cabecera {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar li {
+        margin: 0 5px;
+    } 
+    
+    #description {
+        display: block;
+    }
+    .producto {
+        margin-top: 10px;
+        width: 45%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);        
+    }
+    .precio-descuento{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #description {
+        text-align: center;
+    }
+
+    .productos-en-venta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+} 
+
+@media (min-width: 769px) {
+    .logo {
+        width: 30%;
+    }
+    .buscar {
+        width: 30%;
+    }
+    .cabecera {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+        font-size: 14px;
+    }   
+    .header-cuotas {
+        width: 30%;
+    } 
+    .producto {
+        margin-top: 10px;
+        width: 20%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);        
+    }
+/*     .precio-descuento{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    } */
+    #description {
+        text-align: center;
+    }
+
+    .productos-en-venta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+}
+
+
+/* *************** MAIN REGISTER *************** */
+
