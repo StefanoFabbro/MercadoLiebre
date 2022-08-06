@@ -171,7 +171,9 @@ main img {
     /***** MAIN LOGIN Y REGISTER *****/
 .formulario label {
     display: block;
-
+    size: 14px;
+    font-weight: bold;
+    color: #666;
 }
 
 main form input {
@@ -179,6 +181,12 @@ main form input {
     margin: 5px;
     padding: auto;
     width: 50%;
+    border: solid 2px #666;
+    border-radius: 5px;
+    padding: 2px;
+}
+.checkbox {
+    margin: 0px;
 }
 
 .boton-formulario {
@@ -235,6 +243,9 @@ footer i {
         display: flex;
         justify-content: space-between;
     }
+    
+    .main-navbar a {
+        font-size: 14px;}
 
     .main-navbar ul {
         display: flex;
