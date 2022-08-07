@@ -27,26 +27,39 @@ header {
     padding: 20px;
 }
 
-.cabecera {
+/* .cabecera {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: auto;
-}
+} */
 
 .logo {
-    width: 50%;
+    width: 60%;
 }
 
 .buscar {
+    box-sizing: border-box;
     width: 50%;
+    display: flex; 
+    align-items: center;    
 }
-
-.lupa {
+header input {
+    box-sizing: border-box;
     background-color: white;
     border-radius: 4px;
-    border: solid thin;
+    border: solid black 1px;
+    padding: 2px;
+    width: 100%; 
+}
+.lupa {
+    background-color: none;
+    border-radius: 4px;
+    border: none;
+    padding: 0px;
+    position: relative;
+    right: 17px
 }
 
 header ul li a{
@@ -72,8 +85,24 @@ header ul {
 }
 
 .banner {
-    max-width: 100%;
+    width: 100%;
 }
+
+.logo-barra {
+    display: flex;
+/*     align-items: center;
+    justify-content:space-between */   
+} 
+/* button.lupa{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 478px;
+    top: 33px;
+    border: none;
+    background-color: none;
+}
+ */
 
 .burger-menu i{
     padding: 15px;
@@ -222,20 +251,21 @@ footer i {
 
 @media (min-width: 481px) {
     .logo {
-        width: 30%;
+        width: 75%;
     }
-    .buscar {
-        width: 30%;
-    }
+
     .header-cuotas {
-        width: 30%;
+        width: 40%;
     }
+
     .cabecera {
+        box-sizing: border-box;
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
         align-items: center;
-    }
+    } 
+
     .burger-menu {
         display: none;
     }
@@ -244,7 +274,7 @@ footer i {
         justify-content: space-between;
     }
     
-        .main-navbar a {
+    .main-navbar a {
         font-size: 14px;}
 
     .main-navbar ul {
@@ -281,18 +311,6 @@ footer i {
 } 
 
 @media (min-width: 769px) {
-    .logo {
-        width: 30%;
-    }
-    .buscar {
-        width: 30%;
-    }
-    .cabecera {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-        align-items: center;
-    }
     .main-navbar li {
         margin: 0 10px;
     }
@@ -307,11 +325,7 @@ footer i {
         width: 20%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);        
     }
-/*     .precio-descuento{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    } */
+
     #description {
         text-align: center;
     }
