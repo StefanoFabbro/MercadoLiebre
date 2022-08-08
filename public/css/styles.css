@@ -27,14 +27,6 @@ header {
     padding: 20px;
 }
 
-/* .cabecera {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: auto;
-} */
-
 .logo {
     width: 60%;
 }
@@ -90,19 +82,7 @@ header ul {
 
 .logo-barra {
     display: flex;
-/*     align-items: center;
-    justify-content:space-between */   
 } 
-/* button.lupa{
-    position: absolute;
-    width: auto;
-    height: auto;
-    left: 478px;
-    top: 33px;
-    border: none;
-    background-color: none;
-}
- */
 
 .burger-menu i{
     padding: 15px;
@@ -198,6 +178,9 @@ main img {
 }
 
     /***** MAIN LOGIN Y REGISTER *****/
+main form {
+    text-align: center;
+}
 .formulario label {
     display: block;
     size: 14px;
@@ -216,8 +199,12 @@ main form input {
 }
 .checkbox {
     margin: 0px;
+    text-align: start;
 }
-
+.radio {
+    margin: 0px;
+    text-align: start;
+}
 .boton-formulario {
     background-color: #1259c3;
     border: none;
