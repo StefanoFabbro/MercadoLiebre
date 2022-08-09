@@ -28,12 +28,12 @@ header {
 }
 
 .logo {
-    width: 60%;
+    width: 50%;
 }
 
 .buscar {
     box-sizing: border-box;
-    width: 60%;
+    width: 50%; 
     display: flex; 
     align-items: center;    
 }
@@ -134,7 +134,7 @@ main img {
     font-size: 16px;
     padding: 5px;
     color: #666;
-    display: none;
+    /* display: none; */
 }
 
 .producto {
@@ -251,10 +251,10 @@ main form input {
 }
 
 footer i {
-    padding: 2em;
-    margin: 0 8px;
+    font-size: 2em;
+    margin-bottom: 10px;
     color: #1259c3;
-    transition: 0;
+    transition: 500ms;
 }
 
 footer i:hover {
@@ -355,11 +355,7 @@ footer i:hover {
     main article:hover i {
         transform: rotate(360deg)
     }
-    /* #description:hover {
-        display: block;
-        text-align: center;
-    } */
-
+    
     .productos-en-venta {
         display: flex;
         flex-wrap: wrap;
