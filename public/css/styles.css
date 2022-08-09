@@ -33,7 +33,7 @@ header {
 
 .buscar {
     box-sizing: border-box;
-    width: 50%;
+    width: 60%;
     display: flex; 
     align-items: center;    
 }
@@ -119,14 +119,15 @@ main img {
     font-size: 18px;
     padding: 5px;
     align-self: center;
-    max-width: 30%;
+    width: 30%;
 }
 
 #discount {
     font-size: 16px;
     color: #39b54a;
     padding: 5px;
-    max-width: 70%;
+    width: 65%;
+    text-align: start;
 }
 
 #description {
@@ -138,7 +139,8 @@ main img {
 
 .producto {
     margin-top: 10px;
-        box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
 .product {
@@ -149,6 +151,7 @@ main img {
 
 
 .individual-product {
+    position: relative;
     width: 100%;
     border-top: solid 1px #ebebeb;
     background-color: white;
@@ -172,10 +175,25 @@ main img {
     background-color: #FFF;
     border-radius: 50%;
     right: 55px;
-    position: relative;
-    left: 80%;
-    top: -15px;
+    position: absolute;
+    top: -30px;
+    left: 85%;
+   /*  transition: 1s; */
 }
+
+/* .icons-cart:hover {
+    transform: rotate(360deg)
+}
+ */
+
+ .producto i {
+    transition: 2s;
+ }
+
+ .producto i:hover {
+    transform: rotate(360deg)
+ }
+
 
     /***** MAIN LOGIN Y REGISTER *****/
 main form {
@@ -212,8 +230,12 @@ main form input {
     color: #FFF;
     padding: 5px 10px;
     border-radius: 10px;
+    transition: 500ms;
 }
 
+.boton-formulario:hover {
+    background-color: #0022AA;
+}
 
 
 
@@ -221,8 +243,7 @@ main form input {
 
 .text-footer {
     text-align: center;
-    line-height: 14px;
-    padding: 2px;
+    line-height: 20px;
 }
 
 .alineacion-footer {
@@ -231,7 +252,13 @@ main form input {
 
 footer i {
     padding: 2em;
-    margin: 8px;
+    margin: 0 8px;
+    color: #1259c3;
+    transition: 0;
+}
+
+footer i:hover {
+    color: #0022AA
 }
 
 /************* MEDIA QUERY *************/
@@ -271,30 +298,33 @@ footer i {
     .main-navbar li {
         margin: 0 5px;
     } 
-    
     #description {
-        display: block;
+        display: flex;
+        text-align: center;
     }
+   
     .producto {
         margin-top: 10px;
         width: 45%;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);        
-    }
-    .precio-descuento{
-        box-sizing: border-box;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    #description {
-        text-align: center;
+        transition: 500ms;      
     }
 
+    .producto:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    /* .precio-descuento{
+        box-sizing: border-box;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    } */
+    
     .productos-en-venta {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    
 } 
 
 @media (min-width: 769px) {
@@ -309,20 +339,37 @@ footer i {
     } 
     .producto {
         margin-top: 10px;
-        width: 20%;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);        
+        width: 20%;    
     }
 
     #description {
         text-align: center;
+        display: none;
+        transition: 1500ms;
     }
+
+    main article:hover #description{
+        display: block;
+    }
+
+    main article:hover i {
+        transform: rotate(360deg)
+    }
+    /* #description:hover {
+        display: block;
+        text-align: center;
+    } */
 
     .productos-en-venta {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    
+    .text-footer {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 20px;
+    }
 }
 
 
