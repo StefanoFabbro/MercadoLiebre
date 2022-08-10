@@ -55,7 +55,7 @@
         </header>
         </header>
         <main>
-            <form id="Registro-Usuario" class="formulario">
+            <form id="formulario" class="formulario" action="/">
                 <div class="nombre">
                     <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido">
                 </div>
@@ -121,18 +121,18 @@
                 <button type="submit" class="boton-formulario" href="/">Enviar</button>
                 <button type="reset" class="boton-formulario">Borrar Formulario</button>
             </form>
-            <!-- <script>
-                const formulario = document.getElementById('Registro-Usuario');
+            <script>
+                const formulario = document.getElementById('formulario');
 
                 formulario.addEventListener('submit', function (e) {
-                    e.preventDefault();
-                    console.log(formulario.nombre.value)
-
+                    
                     if (formulario.nombre.value.lenght < 2) {
                         alert('No se ingreso un nombre valido')
+                    } else {
+                        alert('El formulario esta siendo enviado')
                     }
                 })
-            </script> -->
+            </script>
             
 
         </main>

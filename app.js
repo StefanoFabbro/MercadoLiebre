@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+const dotenv = require('dotenv').config();
+
 app.use(express.static('public'));
 
 app.get('/', function(req, res) {
@@ -14,11 +16,7 @@ app.get('/register.html', function(req, res) {
 app.get('/login.html', function(req, res) {
     res.sendFile(path.join (__dirname, "./views/login.html"))
 })
-
-app.post('/register.html', function(req, res) {
-    res.sendFile(path.join (__dirname, "./views/home.html"))
-})
     
-app.listen(3000, () => {
-    console.log('Servidor corriendo');
+app.listen(process.env.PORT, () => {
+    console.log('Servidor corriendo en puerto ' + process.env.PORT);
 })
