@@ -14,6 +14,10 @@ app.get('/register.html', function(req, res) {
 app.get('/login.html', function(req, res) {
     res.sendFile(path.join (__dirname, "./views/login.html"))
 })
+
+app.post('/register.html', function(req, res) {
+    res.sendFile(path.join (__dirname, "./views/home.html"))
+})
     
 app.listen(3000, () => {
     console.log('Servidor corriendo');
