@@ -51,8 +51,7 @@
             </div>
         </header>
         <main>
-            <form id="Registro-Usuario">
-
+            <form id="formulario" class="formulario" action="/">
                 <div class="nombre-usuario">
                     <input type="text" id="nombreusuario" name="nombreusuario" placeholder="Nombre de usuario">
                 </div>
@@ -69,7 +68,18 @@
                     </a>
                 </div>
             </form>
+            <script>
+                const formulario = document.getElementById('formulario');
 
+                formulario.addEventListener('submit', function (e) {
+
+                    if (formulario.nombreusuario.value.length < 3) {
+                        alert('No se ingreso un usuario valido')
+                    } else {
+                        alert('Ingreso Exitoso')
+                    }
+                })
+            </script>
         </main>
         <footer>
             <div class="text-footer">
