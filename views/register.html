@@ -56,7 +56,7 @@
         </header>
         <main>
             <form id="formulario" class="formulario" action="/">
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
                 <br>
                 <div class="nombre-usuario">
                     <input type="text" id="nombreusuario" name="nombreusuario" placeholder="Nombre de usuario">
@@ -124,7 +124,7 @@
 
                 formulario.addEventListener('submit', function (e) {
 
-                    if (formulario.nombre.value.lenght < 2) {
+                    if (formulario.nombre.value.length < 3) {
                         alert('No se ingreso un nombre valido')
                     } else {
                         alert('El formulario esta siendo enviado')
