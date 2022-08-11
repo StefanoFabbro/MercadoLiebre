@@ -231,6 +231,10 @@ main form input {
 
 /************* FOOTER *************/
 
+footer {
+    margin-top: 20px;
+}
+
 .text-footer {
     text-align: center;
     line-height: 20px;
